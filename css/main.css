@@ -1,8 +1,8 @@
-/* * {
+ * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-} */
+}
 html {
     font-size: 62.5%;
 }
@@ -15,6 +15,7 @@ a {
     cursor: pointer; /*Al pasar el cursor aparezca una manita*/
 }
 header {
+    margin-top: 1.5rem;
     width: 100%;
     height: 6.0rem;
 }
@@ -47,5 +48,116 @@ nav .nav-right-section .menu-icon {
 nav .nav-right-section img {
     border-radius: 50%;
     margin-left: 1.0rem;
-
+}
+main {
+    margin-top: 15.5rem;
+    text-align: center;
+}
+main .main-logo {
+    width: 55.3rem;
+    margin: 0 auto; /*De forma dinamica centra el contenido*/
+    margin-bottom: 3.5rem;
+}
+main .main-logo img {
+    width: 30.0rem;
+}
+main .main-input {
+    width: 55.3rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+main .main-input-container {
+    width: 52.5rem;
+    border-radius: 10.0rem;
+    border: 0.1rem solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input {
+    width: 42.0rem;
+    height: 4.0rem;
+    border: none;
+    outline: none; /*Quita la iluminacion del input al colocarse sobre el*/
+    padding: 0 1.8rem;
+}
+/*hover es que al momento de pasar el curso se realize una accion*/
+main .main-input-container:hover {
+    box-shadow: 0 0.1rem 0.6rem 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .search-icon {
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+main .main-input .micro-icon {
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2.0rem;
+    height: 2.0rem;
+    cursor: pointer;
+}
+main .main-buttons {
+    width: 55.3rem;
+    margin: 0 auto;
+}
+main .main-buttons div {
+    display: inline-block;
+}
+main .main-buttons button {
+    height: 3.6rem;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: 0.5rem;
+    padding: 0 1.5rem;
+    margin-right: 1.5rem;
+}
+main .main-buttons button:hover {
+    border: 0.1rem solid #c6c6c6;
+    box-shadow: 0 0.1rem 0.1rem #000001;
+    color: black;
+}
+footer {
+    width: 100%;
+    height: 5.0rem;
+    /*Asegurar que el footer se fije abajo y ocupe todo el width*/
+    position: absolute;
+    bottom: 0;
+    /*Fin de la fijacion en la parte inferior*/
+    
+    /*Display grid*/
+    display: grid;
+    /*
+    Es el atributo que nos dividen en grids el contenido en este caso
+    en 2 usando 1fr para cada una ayudandonos de la maquetacion en HTML
+    */
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: #f2f2f2;
+    border-top: 0.1rem solid #e4e4e4;
+}
+footer ul {
+    margin: 1.0rem;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footer-left {
+    justify-self: left;
+}
+footer .footer-right {
+    justify-self: right;
+}
+footer ul li a {
+    margin: 1.0rem;
+    color: #5f6368;
 }
